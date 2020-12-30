@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+
+
+
+// $("ul li:first").css("background-color","red")
+
+// $("ul li:not(:first)").css("background-color","red")
+// $("ul li:not(:last)").css("background-color","red")
+$("ul li:not(:eq(2))").css("background-color","red")
+
+
+
+        })
+    </script>
+    <style>
+        ul{
+            margin:0px;
+            padding: 0px;
+            width: 200px ;
+        }
+        ul li {
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            margin-bottom: 5px;
+        }
+        ul li:hover{
+            background-color: crimson;
+            border:1px solid #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li>apple</li>
+    <li>cherry</li>
+    <li>pear</li>
+    <li>banana</li>
+    <li>stawberries</li>
+    <li>watermelon</li>
+
+
+</ul>
+
+
+</body>
+</html>
